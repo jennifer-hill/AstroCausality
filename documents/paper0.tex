@@ -39,6 +39,24 @@ Make some comments on the relationship between causal inference and
 conterfactual claims and how this relates to the (presumably)
 deterministic dynamical evolution of the Universe.
 
+\section{Causality generalities}
+
+There is an outcome, a treatment, and many confounders.
+
+Causal inference is challenging for many reasons, not limited to the following:
+The confounders affect the outcome.
+The treatment is probably not given to the population as it would be in a randomized trial.
+The confounders that affect the outcome might also affect whether the treatment is given.
+The outcome might cause the treatment!  Or worse!
+And so on.
+
+We treat the causal inference problem like a missing-data problem:
+We don't get to observe the outcomes that would have happened if the untreated had been treated,
+and if the treated had not been treated;
+we must infer these unobserved---or potential---outcomes.
+
+Here is a toy example of some kind.
+
 \section{Data}
 
 \section{Method}
