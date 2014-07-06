@@ -31,16 +31,119 @@ We find XXX and YYY.
 
 \section{Introduction}
 
-Some comments about galaxy evolution.
+One of the key empirical results of galaxy astrophysics is that
+galaxies in higher density regions are---on average---older
+and forming fewer stars than galaxies in lower-density regions (CITE).
+This result has been confirmed with many different proxies for stellar
+age and star-formation rate, and with many different proxies for
+local density (CITE); it shows that the internal properties of galaxies
+(related to star formation) are covariant with, or can be predicted
+with, external properties (related to environmental density).
+Of course, galaxies also have complex and informative relationships
+among their purely internal properties:
+Galaxy mass, spiral morphology, disk fraction, stellar radial profile,
+and central stellar density are also show strong empirical
+relationships with age and star formation rate (CITE).
 
-Some comments about environment and star formation.
+Naturally, the scientific question has arisen, repeatedly (CITE):
+What sets the star-formation rates of galaxies?
+Does the entrance of a galaxy into a high density environment shut off
+the star formation?
+Or are the star-formation rates set by internal galaxy properties,
+which themselves are differently represented in high density and low
+density envirotnments?
+These, fundamentally, are \emph{causal} questions, and importantly,
+observed correlation, by itself, does not imply causation.
 
-Draw out the ways in which the conclusions of previous work is fundamentally causal.
-Most scientific questions of greatest interest are fundamentally causal in nature.
+Here we look at these questions from the perspective of \emph{causal
+  inference}, the branch of statistics that develops the assumptions
+and techniques required to make a causal claim based on empirical
+evidence.
+Causal inference is employed often in the social sciences and health
+sciences where, often (and always in astronomy) the data are
+``observed'' in natural experiments rather than taken in designed and
+controlled experiments.
+The strongest causal results have been obtained in randomized trials,
+in which a prediction about a causal effect has been made, subjects
+have been randomly assigned to two groups (a ``treatment group'' and a
+``control group''), treatment has been applied and outcomes assessed.
+In randomized experiments, the causal hypothesis makes a clear prediction
+that can be directly tested.
+In astronomy, we are not permitted to perform such randomized trials.
+Their execution would require moving galaxies from one environment to
+another and looking for changes in star-formation rates subsequent to
+the moves.
+Experiments of this nature would require giant actors or machines
+(galaxy-moving machines) working at cosmological scale, and more
+patience than the astronomical community can muster, even taken as a
+whole.
+(Not to mention the environmental impact assessment requirements.)
 
-Make some comments on the relationship between causal inference and
-conterfactual claims and how this relates to the (presumably)
-deterministic dynamical evolution of the Universe.
+This ``giant actors'' fantasy is useful for bringing out ideas about
+causal inference in observational data.
+For one, it illustrates that we will have to make counterfactual
+hypotheses:
+We will have to consider what \emph{would have happened} to a galaxy
+\emph{if it had been} in a different environment.
+We can't move the galaxy to the different environment, so we will have
+to build a model that can predict that outcome, and infer its
+parameters using the data.
+
+For another, it indicates---philosophically---that there is something
+ill-posed about the concept of causality in a deterministic universe.
+Galaxies form, evolve, and move according to (we think) deterministic
+laws from initial conditions; at the microscopic level these laws are
+(we think) time-reversible.
+There is no really plausible counterfactual state for the galaxies we
+observe; if we wanted to self-consistently swap the locations of
+galaxy A and galaxy B, we would have to re-run the entire time history
+of the Universe with different initial conditions.
+Once we re-run everything from scratch, the concept of isolated causal
+``treatments''---environment vs galaxy mass, for instance---is not
+really coherent.
+In this sense, it might be that macroscopic causal questions in the
+Universe such as those asked in the galaxy evolution literature (by
+CITE, just to name a few) are not really well posed at all.
+That is one possible conclusion of this work:
+\emph{Stop asking causal questions!}
+If you have read this far, and still want to know whether galaxy
+star-formation rates are set by the environment external to the galaxy
+or just by internal properties of the galaxy itself, then you may
+proceed below this line, provided that you recognize that you might be
+asking some kind of non-question.
+Don't feel bad:
+Most questions of great interest in the history of science have indeed
+been framed causally.
+
+When observational data---data from a natural experiment over which
+the observers have little or no control---are used to infer a causal
+relationship, there are three kinds of serious issues:
+First, it is imperative that the data and the analysis include good
+information about all important \emph{confounders}.
+[HOGG: Give example here for counfounders.]
+Second, it is important to separate pre-treatment from post-treatment
+variables.
+[HOGG: Continue the example here.]
+Third, it is key that the subjects of the study be independent, or
+non-interfering.
+[HOGG: And some more.]
+
+We hope it is obvious to the reader that all three of these problems
+are substantial in the galaxy astrophysics context:
+We do not have a full mechanical model for star-formation activity in
+galaxies, so we do not have a clear understanding of all the possible
+confounders.
+(Indeed, if we \emph{did} have a full mechanical model for
+star-formation activity, we wouldn't be asking these ill-posed
+questions about causality!)
+We cannot separate pre-treatment from post-treatment effects with any
+degree of certainty.
+Indeed, in a deterministic Universe, it is not obvious that it is even
+possible to make this distinction.
+We don't think that the galaxies---especially those in high density
+environments---are truly independent and non-interfering.
+On that latter point, we might be able to get away with
+sparse-sampling the close pairs.
 
 \section{Causality generalities}
 
